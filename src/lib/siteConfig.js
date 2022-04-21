@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://swyxkit.netlify.app';
+export const SITE_URL = 'https://george-offley-blog-swyxkit.netlify.app';
 export const APPROVED_POSTERS_GH_USERNAME = ['georgeoffley'];
 export const GH_USER_REPO = 'georgeoffley/george-offley-blog'; // used for pulling github issues and offering comments
 export const SITE_TITLE = 'George Offley';
@@ -13,7 +13,6 @@ export const GH_PUBLISHED_TAGS = ['Published'];
 // auto generated variables
 export const REPO_URL = 'https://github.com/' + GH_USER_REPO;
 export const REPO_OWNER = GH_USER_REPO.split('/')[0];
-
 // dont forget process.env.GH_TOKEN
 // if supplied, raises rate limit from 60 to 5000
 // https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting
