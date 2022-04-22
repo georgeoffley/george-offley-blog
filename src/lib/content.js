@@ -23,6 +23,8 @@ const rehypePlugins = [
 	]
 ];
 
+// TODO Change this to the github username env variable that you'll add to the siteConfig.js
+// (Also fork the original repo and do the same) 
 const allowedPosters = ['georgeoffley'];
 const publishedTags = ['Published'];
 let allBlogposts = [];
