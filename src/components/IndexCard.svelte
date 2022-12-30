@@ -11,7 +11,8 @@
 </script>
 
 <a
-	class="w-full text-gray-900 hover:text-yellow-600 dark:text-gray-100 dark:hover:text-yellow-100"
+	sveltekit:prefetch
+	class="w-full text-gray-900 dark:text-gray-100"
 	{href}
 	><div class="w-full mb-8">
 		<div class="flex flex-col justify-between md:flex-row">

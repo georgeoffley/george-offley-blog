@@ -82,7 +82,7 @@
 		</p>
 	</div>
 	<div
-		class="-mx-4 my-2 flex h-1 w-[100vw] bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 sm:mx-0 sm:w-full"
+		class="-mx-4 my-2 flex h-1 w-[100vw] border-b-2 border-b-slate-400 dark:border-indigo-400 sm:mx-0 sm:w-full"
 	/>
 
 	<div class="prose mt-16 mb-32 w-full max-w-none dark:prose-invert">

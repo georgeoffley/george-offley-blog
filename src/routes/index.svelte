@@ -35,7 +35,7 @@
 <div
 	class="mx-auto flex max-w-2xl flex-col items-start justify-center border-gray-200 px-4 pb-16 dark:border-gray-700 sm:px-8"
 >
-	<div class="flex flex-col-reverse items-start sm:flex-row mb-3 border-b-2 border-b-slate-400 dark:border-b-yellow-300">
+	<div class="flex flex-col-reverse items-start sm:flex-row mb-3 border-b-2 border-b-slate-400 dark:border-indigo-400">
 		<div class="flex flex-col pr-8 mb-3 text-black dark:text-white">
 			<h1 class="mb-3 text-3xl font-bold tracking-tight md:text-5xl">
 				George Offley
