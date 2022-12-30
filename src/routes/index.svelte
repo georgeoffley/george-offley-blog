@@ -107,5 +107,8 @@
 			></a
 		>
 	</section>
-	<Newsletter />
+	<!--
+		Commented out newsletter section until I actually set up a newsletter
+	-->
+	<!-- <Newsletter /> -->
 </div>

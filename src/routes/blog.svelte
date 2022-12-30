@@ -87,18 +87,32 @@
 	</div>
 	{#if !search}
 		<h3 class="mt-8 mb-4 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
-			Most Popular
+			Favorite Posts
 		</h3>
-		<IndexCard href="/foo" title="Hardcoded Blogpost # 1" stringData="106,255 views">
-			Just a hardcorded blogpost or you can use the metadata up to you
-		</IndexCard>
-		<IndexCard href="/welcome" title="Welcome to Swyxkit" stringData="106,255 views">
-			Just a hardcorded blogpost or you can use the metadata up to you
-		</IndexCard>
-		<IndexCard href="/moo" title="Hardcoded Blogpost # 3" stringData="106,255 views">
-			Just a hardcorded blogpost or you can use the metadata up to you
-		</IndexCard>
-
+		<!--
+			TODO: Turn these into the most viewed by using the netflify numbers dynamically
+			Currently Hardcoded
+		-->
+		<!--
+			TODO: Figure out how we can add and pass in a logline or quick synopsis in the metadata
+				  rather than using hardcoded child elements via the <slot /> tag
+				  https://svelte.dev/tutorial/slots
+		-->
+		<IndexCard 
+			href="/shared-memory-in-docker" 
+			title="Shared Memory in Docker" 
+			stringData="Many views" 
+		/>
+		<IndexCard 
+			href="/working-with-context-in-go"
+			title="Working with Context in Go" 
+			stringData="Many views" 
+		/>
+		<IndexCard 
+			href="/context-in-react" 
+			title="Context In React" 
+			stringData="Manyviews" 
+		/>
 		<h3 class="mt-8 mb-4 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
 			All Posts
 		</h3>

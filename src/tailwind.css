@@ -117,9 +117,10 @@ h5 a,
 h6 a {
 	/* margin-left: 1rem; */
 	text-decoration: none !important;
-	@apply text-orange-700 dark:text-orange-400;
+	@apply text-orange-700 dark:text-indigo-400;
 }
-.prose h2::before {
+/*Commented out so that header tags don't get suffixed with ###*/
+/* .prose h2::before {
 	content: '## ';
 }
 .prose h3::before {
@@ -127,7 +128,7 @@ h6 a {
 }
 .prose h4::before {
 	content: '#### ';
-}
+} */
 
 /* https://seek-oss.github.io/capsize/ */
 .capsize::before {
