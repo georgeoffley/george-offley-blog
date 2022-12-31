@@ -1,8 +1,15 @@
 export const SITE_URL = 'https://george-offley-blog-swyxkit.netlify.app';
 export const APPROVED_POSTERS_GH_USERNAME = ['georgeoffley'];
 export const GH_USER_REPO = 'georgeoffley/george-offley-blog'; // used for pulling github issues and offering comments
+<<<<<<< HEAD
 export const SITE_TITLE = 'George Offley';
 export const SITE_DESCRIPTION = "swyx's default SvelteKit + Tailwind starter";
+=======
+export const REPO_URL = 'https://github.com/' + GH_USER_REPO;
+export const SITE_TITLE = "George Offley's Blog";
+export const SITE_DESCRIPTION =
+	"George Offley's version of swyx's default SvelteKit + Tailwind starter";
+>>>>>>> da52968 (Additional changes)
 export const DEFAULT_OG_IMAGE =
 	'https://user-images.githubusercontent.com/6764957/147861359-3ad9438f-41d1-47c8-aa05-95c7d18497f0.png';
 export const MY_TWITTER_HANDLE = 'georgeoffley';

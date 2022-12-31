@@ -28,6 +28,13 @@ const rehypePlugins = [
 	]
 ];
 
+<<<<<<< HEAD
+=======
+// TODO Change this to the github username env variable that you'll add to the siteConfig.js
+// (Also fork the original repo and do the same)
+const allowedPosters = ['georgeoffley'];
+const publishedTags = ['Published'];
+>>>>>>> da52968 (Additional changes)
 let allBlogposts = [];
 // let etag = null // todo - implmement etag header
 
@@ -60,6 +67,10 @@ export async function listContent(providedFetch) {
 	// use a diff var so as to not have race conditions while fetching
 	// TODO: make sure to handle this better when doing etags or cache restore
 
+	// TODO: Putting all the issues into a ContentItem makes us drop
+	//		 stuff like the labels from the issue. Change it so I can
+	//		 filter certain tags out and have different types of writing for tech,
+	//		 graphics stuff, and maybe musings for personal writing
 	/** @type {import('./types').ContentItem[]} */
 	let _allBlogposts = [];
 	let next = null;
@@ -125,8 +136,12 @@ export async function getContent(providedFetch, slug) {
 			.replace(/\n{% youtube (.*?) %}/g, (_, x) => {
 				// https://stackoverflow.com/a/27728417/1106414
 				function youtube_parser(url) {
+<<<<<<< HEAD
 					var rx =
 						/^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|&v(?:i)?=))([^#&?]*).*/;
+=======
+					var rx = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/;
+>>>>>>> da52968 (Additional changes)
 					return url.match(rx)[1];
 				}
 				const videoId = x.startsWith('https://') ? youtube_parser(x) : x;
