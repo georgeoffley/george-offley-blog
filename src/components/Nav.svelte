@@ -103,11 +103,7 @@
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
-<<<<<<< HEAD
 					class="h-5 w-5 text-gray-800 dark:text-gray-200"
-=======
-					class="w-5 h-5 text-gray-800 dark:text-gray-200"
->>>>>>> 66b80be (Initial commit)
 				>
 					<path
 						stroke-linecap="round"

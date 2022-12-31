@@ -28,13 +28,6 @@ const rehypePlugins = [
 	]
 ];
 
-<<<<<<< HEAD
-=======
-// TODO Change this to the github username env variable that you'll add to the siteConfig.js
-// (Also fork the original repo and do the same)
-const allowedPosters = ['georgeoffley'];
-const publishedTags = ['Published'];
->>>>>>> da52968 (Additional changes)
 let allBlogposts = [];
 // let etag = null // todo - implmement etag header
 
@@ -136,12 +129,8 @@ export async function getContent(providedFetch, slug) {
 			.replace(/\n{% youtube (.*?) %}/g, (_, x) => {
 				// https://stackoverflow.com/a/27728417/1106414
 				function youtube_parser(url) {
-<<<<<<< HEAD
 					var rx =
 						/^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|&v(?:i)?=))([^#&?]*).*/;
-=======
-					var rx = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/;
->>>>>>> da52968 (Additional changes)
 					return url.match(rx)[1];
 				}
 				const videoId = x.startsWith('https://') ? youtube_parser(x) : x;
