@@ -3,7 +3,7 @@ import { listContent } from '$lib/content';
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function GET({ fetch }) {
-  const posts = await listContent(fetch);
+	const posts = await listContent(fetch);
 	const pages = [`about`];
 	const body = sitemap(posts, pages);
 

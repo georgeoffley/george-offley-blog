@@ -14,7 +14,7 @@ export async function GET({ fetch, params }) {
 			}
 		});
 	} catch (err) {
-		console.log("didn't find ", slug)
+		console.log("didn't find ", slug);
 		console.error(err);
 		throw error(404, err.message);
 	}

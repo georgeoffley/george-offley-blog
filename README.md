@@ -10,15 +10,13 @@ A lightly opinionated starter for [SvelteKit](https://kit.svelte.dev/) blogs:
   - [Admonitions and Bleed layouts](https://swyxkit.netlify.app/layout-breakouts-in-swyxkit)
 - Lots of minor DX and UX opinions (see below)
 - <details>
-	<summary>
-	💯 100's across the board on Lighthouse scores
-	</summary>
+  <summary>
+  💯 100's across the board on Lighthouse scores
+  </summary>
 
+  ![image](https://user-images.githubusercontent.com/6764957/207693633-8e85630b-5717-42d9-b5ff-8b69d2cbda30.png)
 
-	![image](https://user-images.githubusercontent.com/6764957/207693633-8e85630b-5717-42d9-b5ff-8b69d2cbda30.png)
-
-  </details>  
-
+  </details>
 
 Feel free to rip out these opinions as you see fit of course.
 
@@ -62,29 +60,26 @@ See https://swyxkit.netlify.app/ (see [Deploy Logs](https://app.netlify.com/site
     - SvelteKit does not yet support [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) - [PR pending here](https://github.com/sveltejs/kit/pull/2394/files)
   - [Builds and deploys in ~40 seconds on Netlify](https://app.netlify.com/sites/swyxkit/deploys)
 - **Minor design/UX touches**
-	- Blog Index features
-		- Blog index truncates at 20 posts to make sure to render quickly
-		- Blog search/facets serialize to URLs for easy copy paste 
-			- previously [done by @Ak4zh](https://github.com/sw-yx/swyxkit/pull/97)
-			- but since moved to [`sveltekit-search-params`](https://github.com/paoloricciuti/sveltekit-search-params) [by @paoloricciuti](https://github.com/sw-yx/swyxkit/pull/140)
-			- The Error page feature uses this to send you back to a searchable index
-		- Error page (try going to URL that doesn't exist)
-			- Including nice error when GitHub API rate limit exceeded (fix by setting `GH_TOKEN`)
-			- The 404 page includes a link you can click that sends you back to the search index with the search terms ([blog post](https://github.com/sw-yx/swyxkit/issues/90))
-	- Individual Blogpost features
-		- [Comments are rendered and sanitized](https://github.com/developit/snarkdown/issues/70)
-		- `full`, `feature`, and `popout` [bleed layout](https://ryanmulligan.dev/blog/layout-breakouts/) classes on desktop - `feature` enabled by default for code samples! ([details and code samples here](https://swyxkit.netlify.app/layout-breakouts-in-swyxkit))
-		- Top level blog URLs (`/myblog` instead of `/blog/myblog` - [why](https://www.swyx.io/namespacing-sites/))
-	- General features
-		- Navlink hover effect
-		- [Mobile/Responsive styling](https://swyxkit.netlify.app/mobileresponsive-styling-with-tailwind)
-				- Mobile menu with animation
-		- Og:image and meta tags for social unfurls (not automatically generated though)
-		- Accessibility
-				- SVG Icons https://github.com/sw-yx/spark-joy/blob/master/README.md#general--misc
-				- [Tap targets](https://web.dev/tap-targets/?utm_source=lighthouse&utm_medium=lr)
-		- Custom scrollbar https://css-tricks.com/strut-your-stuff-with-a-custom-scrollbar/
-		- Defensive CSS touches https://ishadeed.com/article/defensive-css
+  - Blog Index features
+    - Blog index truncates at 20 posts to make sure to render quickly
+    - Blog search/facets serialize to URLs for easy copy paste
+      - previously [done by @Ak4zh](https://github.com/sw-yx/swyxkit/pull/97)
+      - but since moved to [`sveltekit-search-params`](https://github.com/paoloricciuti/sveltekit-search-params) [by @paoloricciuti](https://github.com/sw-yx/swyxkit/pull/140)
+      - The Error page feature uses this to send you back to a searchable index
+    - Error page (try going to URL that doesn't exist)
+      - Including nice error when GitHub API rate limit exceeded (fix by setting `GH_TOKEN`)
+      - The 404 page includes a link you can click that sends you back to the search index with the search terms ([blog post](https://github.com/sw-yx/swyxkit/issues/90))
+  - Individual Blogpost features
+    - [Comments are rendered and sanitized](https://github.com/developit/snarkdown/issues/70)
+    - `full`, `feature`, and `popout` [bleed layout](https://ryanmulligan.dev/blog/layout-breakouts/) classes on desktop - `feature` enabled by default for code samples! ([details and code samples here](https://swyxkit.netlify.app/layout-breakouts-in-swyxkit))
+    - Top level blog URLs (`/myblog` instead of `/blog/myblog` - [why](https://www.swyx.io/namespacing-sites/))
+  - General features
+    - Navlink hover effect
+    - [Mobile/Responsive styling](https://swyxkit.netlify.app/mobileresponsive-styling-with-tailwind) - Mobile menu with animation
+    - Og:image and meta tags for social unfurls (not automatically generated though)
+    - Accessibility - SVG Icons https://github.com/sw-yx/spark-joy/blob/master/README.md#general--misc - [Tap targets](https://web.dev/tap-targets/?utm_source=lighthouse&utm_medium=lr)
+    - Custom scrollbar https://css-tricks.com/strut-your-stuff-with-a-custom-scrollbar/
+    - Defensive CSS touches https://ishadeed.com/article/defensive-css
 - **Developer Experience**
   - [JSDoc Typechecking](https://swyxkit.netlify.app/how-to-add-jsdoc-typechecking-to-sveltekit)
   - ESLint + Prettier
@@ -92,7 +87,6 @@ See https://swyxkit.netlify.app/ (see [Deploy Logs](https://app.netlify.com/site
   - Design system sandbox/"Storybook" setup with [Histoire](https://histoire.dev/guide/svelte3/hierarchy.html):
     - (Dec 2022): This is normally included in your `npm start` command - but has been temporarily disabled due to Sveltekit moving to Vite 4 and Histoire being behind.
     - `npm run story:dev` to view it on http://localhost:6006/. (currently not working)
-
 
 This is a partial implementation of https://www.swyx.io/the-surprisingly-high-table-stakes-of-modern-blogs/
 
